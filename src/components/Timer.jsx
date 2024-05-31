@@ -7,6 +7,9 @@ export const Timer = () => {
                 <p>
                     10:00
                 </p>
+                <button>
+                    Start
+                </button>
             </div>
         </div>
     )
