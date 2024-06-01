@@ -1,3 +1,4 @@
+import { ActionPanelRight } from "./components/ActionPanelRight"
 import { DinamicBackground } from "./components/DinamicBackground"
 import { DinamicPhrase } from "./components/DinamicPhrase"
 import { Timer } from "./components/Timer"
@@ -17,7 +18,8 @@ function App() {
           </div>
         </div>
         <div className="footer">
-          3
+          <div></div>
+          <ActionPanelRight />
         </div>
       </div>
       <DinamicBackground />
