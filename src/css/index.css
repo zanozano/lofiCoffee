@@ -195,7 +195,19 @@ main {
 }
 
 .panel {
+    align-items: center;
+    backdrop-filter: blur(6px);
     background-color: var(--surface);
     border-radius: var(--border-radius-small);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    justify-content: center;
     padding: 1.4rem;
+
+    & p {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--white-text);
+    }
 }
