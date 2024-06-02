@@ -198,7 +198,10 @@ main {
     align-items: center;
     backdrop-filter: blur(6px);
     background-color: var(--surface);
+    background: none;
     border-radius: var(--border-radius-small);
+    border: none;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -210,4 +213,31 @@ main {
         font-weight: 700;
         color: var(--white-text);
     }
+}
+
+.slide-panel {
+    display: none;
+    align-items: flex-start;
+    backdrop-filter: blur(6px);
+    background-color: var(--surface);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    left: -300px;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    transition: left 0.3s ease;
+    width: 300px;
+}
+
+.slide-panel.open {
+    left: 0;
+    display: flex;
+}
+
+.slide-panel button {
+    align-self: flex-end;
 }
